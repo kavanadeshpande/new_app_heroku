@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>Flask App</title>
+    </head>
+    <body>
+        <form action="predict", method="post">
+            <input type='number' name='experience' placeholder='Experience' required='required'>
+            <input type='number' name='score' placeholder='Test_Score' required='required'>
+            <input type='number' name='i_score' placeholder='Interview_Score' required='required'>
+            <button type='submit'>predict</button>
+            {{prediction_text}}
+        </form>
+    </body>
+</html>
